@@ -1,0 +1,47 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>680</x><y>164</y><w>210</w><h>150</h></coordinates><panel_attributes>Subscription
+--
+-sid: Long
+- is_expired: boolena
+- date: date
+--
++checkExpiry(sid): boolean
++ getExpirationDate(sid): date
++payment_info(sid): float</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>870</x><y>474</y><w>200</w><h>170</h></coordinates><panel_attributes>Payment Info
+--
+
+-ptId: Long
+-paymentDate: Date
+-paymentAmount: Float
+
+--
+
++getPaymentDate(ptid): Date
++getPaymentAmount(ptid): Float
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>184</y><w>210</w><h>150</h></coordinates><panel_attributes>Magazine
+--
+-mid: Long
+-is_suscribed: boolean
+-suscribersList: String
+
+--
++getSuscrivers(): String
++setSuscribers(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>484</y><w>210</w><h>170</h></coordinates><panel_attributes>Person
+--
+-pid: Long
+-pName: String
+-countSubsricption: int
+-subscriptionList: String
+
+--
+
++getSubscription(pid): String
++setSuscribers(pid): String
++getCountSubs(): int
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>770</x><y>304</y><w>220</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+</panel_attributes><additional_attributes>10;10;200;170</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>224</y><w>430</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=
+has &gt;</panel_attributes><additional_attributes>410;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>300</y><w>130</w><h>200</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+has</panel_attributes><additional_attributes>100;10;10;180</additional_attributes></element></diagram>

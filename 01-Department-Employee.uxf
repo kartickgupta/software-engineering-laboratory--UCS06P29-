@@ -1,0 +1,53 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>388</x><y>10</y><w>210</w><h>190</h></coordinates><panel_attributes>Company
+--
+-id: Long
+- companyNmae: String
+- no_of_dept: int
+--
++ getID(): Long
++ getCompanyName(): String
++ getNoOfDepts(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>48</x><y>330</y><w>200</w><h>130</h></coordinates><panel_attributes>Department
+--
+-deptId: Long
+-deptNmae: String
+
+--
++getID(): Long
++getDeptName(): String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>568</x><y>330</y><w>210</w><h>150</h></coordinates><panel_attributes>Office
+--
+-id: Long
+-officeName: String
+-location: String
+
+--
++getOId(): Long
++getOName(): String
++getLocation(): String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>938</x><y>340</y><w>210</w><h>130</h></coordinates><panel_attributes>HeadQuarter
+--
+-id: Long
+-officeName: String
+
+--
++getOId(): Long
++getOName(): String
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>218</x><y>560</y><w>210</w><h>160</h></coordinates><panel_attributes>Manager
+--
+-mid: Long
+-managerName: String
+-deptID: Long
+
+--
++getMid(): Long
++getMName(): String
++getDId(): Long
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>238</x><y>190</y><w>280</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+</panel_attributes><additional_attributes>260;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>118</x><y>450</y><w>200</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;180;110</additional_attributes></element><element><id>Relation</id><coordinates><x>238</x><y>390</y><w>350</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=1..n
+m2=1..m
+locates in &gt;</panel_attributes><additional_attributes>10;20;330;20</additional_attributes></element><element><id>Relation</id><coordinates><x>770</x><y>400</y><w>190</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=
+m2=1
+acts as &gt;</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element></diagram>

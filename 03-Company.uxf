@@ -1,0 +1,56 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>328</x><y>0</y><w>210</w><h>160</h></coordinates><panel_attributes>Company
+--
+- companyName: String
+-depts: String[n]
+--
+
++getCompanyName(): String
++setName(): void
++getDept(): String
++setDepts(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>260</y><w>210</w><h>150</h></coordinates><panel_attributes>Employees
+--
+-name: String
+-eid: Long
+--
+
++getName(): String
++setName(): void
++getID(): String
++setID(): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>680</x><y>210</y><w>210</w><h>150</h></coordinates><panel_attributes>Report
+--
+-name: String
+
+--
+
++getName(): String
++setName(): void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>780</x><y>550</y><w>210</w><h>150</h></coordinates><panel_attributes>Projects
+--
+-name: String
+-deptInvolved: String
+--
+
++getName(): String
++setName(): void
++getDept(): String
++setDept(): void
++getAbout(): String
++setAbout(): void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>332</x><y>560</y><w>210</w><h>150</h></coordinates><panel_attributes>CEO
+--
+-name: String
+
+--
+
++getName(): String
++setName(): void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>400</y><w>70</w><h>180</h></coordinates><panel_attributes>lt=&lt;-
+m1=1..n
+Assigns</panel_attributes><additional_attributes>10;10;10;160</additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>150</y><w>30</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>630</y><w>270</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+Manages</panel_attributes><additional_attributes>250;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>290</y><w>170</w><h>290</h></coordinates><panel_attributes>lt=&lt;-
+Controls</panel_attributes><additional_attributes>150;10;10;270</additional_attributes></element></diagram>

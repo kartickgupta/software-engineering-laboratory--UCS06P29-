@@ -1,0 +1,95 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>730</x><y>260</y><w>200</w><h>130</h></coordinates><panel_attributes>Department
+--
+-deptId: Long
+-deptNmae: String
+
+--
++getID(): Long
++getDeptName(): String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>730</x><y>0</y><w>200</w><h>130</h></coordinates><panel_attributes>University
+--
+-name: String
+-id: Long
+
+--
++getCountOfClassrooms()g
++getDepartments(): String
++getOffices()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>260</y><w>200</w><h>130</h></coordinates><panel_attributes>Classroom
+--
+-id: Long
+-name: String
+
+--
++getID()
++getName()
++countClassrooms()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1070</x><y>260</y><w>200</w><h>130</h></coordinates><panel_attributes>Office
+--
+-id: Long
+-name: String
+
+--
++getID()
++getOfficeName()
++countOffice()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>930</x><y>510</y><w>200</w><h>130</h></coordinates><panel_attributes>Person
+--
+-id: Long
+-name: String
+
+--
++getID()
++getName()
++getDept()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>710</x><y>750</y><w>200</w><h>150</h></coordinates><panel_attributes>Professor
+--
+-id: Long
+-name: String
+
+--
++getID()
++getName()
++getDept()
++getSubjects()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1100</x><y>750</y><w>200</w><h>130</h></coordinates><panel_attributes>Employee
+--
+-id: Long
+-name: String
+
+--
++getID()
++getName()
++getOfficeID()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>450</x><y>970</y><w>200</w><h>120</h></coordinates><panel_attributes>Full Professor
+--
+-id: Long
+-name: String
+
+--
++getID()
++getName()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>710</x><y>970</y><w>200</w><h>120</h></coordinates><panel_attributes>Associate Professor
+--
+-id: Long
+-name: String
+
+--
++getID()
++getName()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>960</x><y>970</y><w>200</w><h>120</h></coordinates><panel_attributes>Assistant Professor
+--
+-id: Long
+-name: String
+
+--
++getID()
++getName()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>820</x><y>120</y><w>30</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>150</y><w>720</w><h>130</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;110;10;20;700;20;700;110</additional_attributes></element><element><id>Relation</id><coordinates><x>920</x><y>310</y><w>170</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;150;10</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>300</y><w>170</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>150;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>750</x><y>380</y><w>110</w><h>390</h></coordinates><panel_attributes>lt=-
+m1=0..Student
+m2=0..Departments
+Enrolled in </panel_attributes><additional_attributes>10;370;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>830</x><y>680</y><w>390</w><h>90</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;70;10;20;370;20;370;70</additional_attributes></element><element><id>Relation</id><coordinates><x>1000</x><y>630</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>610</x><y>920</y><w>390</w><h>70</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;50;10;20;370;20;370;50</additional_attributes></element><element><id>Relation</id><coordinates><x>790</x><y>890</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element></diagram>

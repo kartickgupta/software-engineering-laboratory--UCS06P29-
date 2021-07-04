@@ -1,0 +1,65 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>65</x><y>290</y><w>200</w><h>130</h></coordinates><panel_attributes>Person
+--
+-name: String
+-mail: String
+-phone: String
+-address: String
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>180</y><w>200</w><h>150</h></coordinates><panel_attributes>Student
+--
+-name: String
+-id: Long
+-rollNo: int
+-avg_marks: int
+
+--
++getSeminars()
++isEliglible(seminarId)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>430</y><w>200</w><h>130</h></coordinates><panel_attributes>Professor
+--
+-name: String
+-id: Long
+-salary: Long
+
+--
++getSeminars()
++isEliglible(seminarId)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>665</x><y>180</y><w>200</w><h>130</h></coordinates><panel_attributes>SeminarEnrollment
+--
+-marksRecieved: double
+
+--
++getAvg()
++getFinalMarks()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1010</x><y>180</y><w>200</w><h>130</h></coordinates><panel_attributes>Seminar
+--
+-id: Long
+-name: String
+
+--
++addStudent(Student)
++removeStudent(Student)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>882</x><y>470</y><w>200</w><h>130</h></coordinates><panel_attributes>Bachelor Seminar
+--
+-id: Long
+-name: String
+
+--
++getStudents()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1124</x><y>470</y><w>200</w><h>130</h></coordinates><panel_attributes>Master Seminar
+--
+-id: Long
+-name: String
+
+--
++getStudents()
++withdrawStudents()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>926</x><y>400</y><w>390</w><h>90</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;70;10;20;370;20;370;70</additional_attributes></element><element><id>Relation</id><coordinates><x>1096</x><y>300</y><w>30</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>855</x><y>210</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=0..m
+enrollment in &gt;</panel_attributes><additional_attributes>10;20;150;20</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>280</y><w>470</w><h>210</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=0..1
+teaches to &gt;</panel_attributes><additional_attributes>10;190;450;10</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>200</y><w>130</w><h>120</h></coordinates><panel_attributes>lt=-
+m1=n
+m2=m
+enrolled in &gt;</panel_attributes><additional_attributes>10;100;110;10</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>230</y><w>100</w><h>290</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=0..1
+teaches to &gt;</panel_attributes><additional_attributes>50;260;10;260;10;10;50;10</additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>350</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element></diagram>
